@@ -1,0 +1,10 @@
+.anton-sc-regular {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*DISTANCIA ENTRE EL NOMBRE DE LA FUENTE DE SODA Y EL ICONO*/
+.anton-sc-regular.text-white img {
+  margin-left: 10px; 
+}
