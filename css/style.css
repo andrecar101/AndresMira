@@ -8,3 +8,29 @@
 .anton-sc-regular.text-white img {
   margin-left: 10px; 
 }
+
+.carousel-img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+  
+
+
+
+
+
+
