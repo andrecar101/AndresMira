@@ -65,16 +65,23 @@
 
 <!-- MAIN -->
 <main>
-  <!-- CARRUSEL CON LOS PLATILLOS-->
+  <!-- CARRUSEL CON LOS PLATILLOS -->
   <div id="carouselExample" class="carousel slide d-md-flex m-auto w-100">
+    
+    <!-- SLIDES -->
     <div class="carousel-inner">
-      <!-- PLATO 1-->
+      <!-- PLATO 1 -->
       <div class="carousel-item active">
         <div class="d-flex align-items-center ms-5">
           <img src="img/pollo_papas _fritas.png" class="carousel-img me-4" alt="Pollo con papas fritas">
           <div class="ms-5">
             <h1>Pollo con papas fritas</h1>
-            <p>Descripción del pollo con papas fritas.</p>
+            <h3> <u>Ingredientes</u></h2>
+            <p>
+              Pollo Frito 
+              <br>
+              Papas Fritas
+            </p>
           </div>
         </div>
       </div>
@@ -93,24 +100,32 @@
       <!-- PLATO 3 -->
       <div class="carousel-item">
         <div class="d-flex align-items-center ms-5">
-          <img src="./img/tercer_plato.png" class="carousel-img me-4" alt="Tercer slide">
+          <img src="./img/tercer_plato.png" class="carousel-img me-4" alt="plato">
           <div>
             <h1>Papas fritas con pollo</h1>
-            <p>ricas papas.</p>
+            <p>Ricas papas.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- BOTONES DE NAVEGACION --> <!-- MEJORARLOS SE VEN MAL-->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
+    <!-- INDICADORES DE PUNTOS -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- BOTONES DE NAVEGACION -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+  
   </div>
 </main>
 
