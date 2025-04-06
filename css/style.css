@@ -12,22 +12,13 @@ body {
 }
 
 /*COLOR DEL TEXTO EN GENERAL*/
-h1, h2, h3, h5, p {
-  color: #fff;  /* Texto blanco para que se vea bien sobre el fondo */
-}
 
 /*ESTILO NEON*/
-#NEON {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-}
 
 /*Neon (solo dentro del contenedor #main)*/
 #NEON h4 {
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   margin-bottom: 0;
   margin-top: 0;
   line-height: 1;
@@ -156,10 +147,9 @@ h1, h2, h3, h5, p {
   margin-left: 10px; 
 }
 
-.carousel-img {
-  width: 450px;
-  height: 350px;
-}
+
+/* AJUSTES DEL CARRUSEL*/
+
 
 @media (max-width: 768px) {
   .carousel-img {
@@ -172,23 +162,40 @@ h1, h2, h3, h5, p {
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  background-color: #373A3C;
+  background-color: #c6cacc;
 }
 .carousel-indicators {
   bottom: -40px;
 }
 
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: black;
-  width: 50px;
-  height: 50px;
+/* AJUSTES DEL LAS CARTAS*/
+
+/*ajuste responsivo*/
+
+@media (max-width: 768px) {  
+  .carta-logo {
+    max-width: 100%;  
+  }
 }
 
+ /*ajuste de altura de las cartas*/
+.custom-card {
+  height: 100%;
+  min-height: 520px;
+}
 
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
 
-
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
 
 
   
