@@ -27,6 +27,7 @@
 </head>
 
 <body>
+
   <!-- HEADER -->
   <header>
     <!-- CONTIENE LA BARRA DE NAVEGACION PRINCIPAL -->
@@ -64,7 +65,7 @@
         </div>
       </div>
     </nav>
-    
+
 
   </header>
 
@@ -76,10 +77,9 @@
 
   <!-- CONTIENE EL CUERPO DE LA PAGINA-->
 
+  <!-- NEON -->
+  <h1 id="NEON_AZUL">Bienvenido</h1>
 
-  <div id="NEON">
-    <h4 class="monoton-regular py-5">Bienvenido</h4>
-  </div>
 
 
 
@@ -88,10 +88,8 @@
 
   <!-- MAIN -->
   <main>
-
-    <BR></BR>
     <!-- CARRUSEL CON LOS PLATILLOS -->
-    <div class="container d-flex justify-content-center py-5">
+    <div class="container d-flex justify-content-center ">
       <div id="carouselMenu" class="carousel slide" data-bs-ride="carousel" style="max-width: 600px; width: 100%;">
 
         <div class="carousel-inner">
@@ -102,7 +100,7 @@
             <img src="./img/sundae.png" class="d-block w-100" alt="Humitas">
           </div>
           <div class="carousel-item">
-            <img src="./img/whisky.jpg" class="d-block w-100" alt="Cocteles">
+            <img src="./img/piscola.jpg" class="d-block w-100" alt="Cocteles">
           </div>
         </div>
 
@@ -133,10 +131,9 @@
     <div class="container border-bottom border-dark border-3 mt-5 mb-2 "></div>
 
 
-    <!-- SEPARAOR -->
-    <div id="NEON">
-      <h4 class="monoton-regular">Platillos</h4>
-    </div>
+    <!-- NEON -->
+    <h1 id="NEON_VERDE">Platillos</h1>
+
 
 
     <!-- CONTENEDOR CON LOS PLATILLOS -->
@@ -201,26 +198,16 @@
       </div>
     </div>
 
+    
     <!--ENLACE COCTELES-->
     <section id="cocteles"></section>
-
-
-
-
-
-
-
-    <div id="NEON">
-      <h4 class="monoton-regular">Cocteles</h4>
-    </div>
-
-
-
+    <!-- NEON -->
+    <h1 id="NEON_ROJO">Cocteles</h1>
+    
 
     <!-- CONTENEDOR CON LOS TRAGOS -->
 
     <div class="container text-center mb-5">
-      <br>
       <div class="row">
         <!-- TRAGO 1-->
         <div class="col-md-3 mb-4">
@@ -280,14 +267,15 @@
       </div>
     </div>
 
-    <div id="NEON">
-      <h4>Historia de la empresa</h4>
-    </div>
 
+
+
+
+    <!-- NEON -->
+    <h1 id="NEON_NARANJA">Historia de la empresa</h1>
 
     <!-- CONTENEDOR DE HISTORIA DE LA EMPRESA-->
-    <div class="container text-center">
-      <br>
+    <div class="container text-center py-3">
       <div class="row">
         <!--PARTE 1-->
         <div class="col-md-6 mb-4">
@@ -318,14 +306,13 @@
           </div>
         </div>
 
+        <!-- NEON -->
 
-        <div id="NEON">
-          <h4>Testimonios</h4>
-        </div>
+        <h1 id="NEON_NARANJA">Testimonios</h1>
 
-        <div id="NEON">
-          <section class="container ">
-            <h2 class="text-center mb-5">Lo que dicen nuestros clientes</h2>
+        <div id="NEON_NARANJA_2">
+          <section class="container">
+            <h4 class="text-center mb-5">Opiniones de algunos clientes</h4>
         </div>
         <div class="row">
           <!-- Testimonio 1 -->
@@ -374,25 +361,34 @@
 
 
 
-        <!-- SUCURSALES-->
-
-
         <div class="row">
-          <!-- Sucursal Centro de Valdivia (ubicación original de Isla Teja) -->
-          <!--SUCURSALES-->
+          <!-- SUCURSALES -->
           <section id="sucursales" class="container text-white my-5">
-            <div id="NEON">
-              <h4 class="text-center">SUCURSALES</h4>
-            </div>
-            <BR></BR>
+            <h1 id="NEON_NARANJA">Sucursales</h1>
+            <br>
+
             <div class="row">
-              <!-- SUCURSAL LAS ANIMAS-->
-              <div class="col-12 col-md-6 border py-3">
-                <h4>Sucursal Las Animas</h4>
-                <img src="imágenes/sucursal centro.png" class="img-fluid mb-2" alt="Sucursal Centro de Valdivia">
-                <p>Teléfono: (56-63) 2212121</p>
-                <p>Correo: contacto@aniquilador.cl</p>
-                <p>Ubicación: Al costado de INACAP VALDIVIA</p>
+              <!-- SUCURSAL LAS ÁNIMAS -->
+              <div class="col-12 col-md-6 border py-3 position-relative" style="border-radius: 15px; overflow: hidden;">
+                <h4>Sucursal Las Ánimas</h4>
+                <div class="position-relative">
+                  <img src="./img/parte_2.png" class="img-fluid mb-2" alt="las_animas">
+
+                  <!-- INFO RESTOBAR -->
+                  <div
+                    style="position: absolute; top: 10px; left: 10px; color: white; text-decoration: underline; background-color: rgba(0, 0, 0, 0.6); padding: 5px;">
+                    Teléfono: (56-63) 2212121
+                  </div>
+                  <div
+                    style="position: absolute; top: 40px; left: 10px; color: white; text-decoration: underline; background-color: rgba(0, 0, 0, 0.6); padding: 5px;">
+                    Correo: contacto@aniquilador.cl
+                  </div>
+                  <div
+                    style="position: absolute; top: 70px; left: 10px; color: white; text-decoration: underline; background-color: rgba(0, 0, 0, 0.6); padding: 5px;">
+                    Ubicación: Al costado de INACAP VALDIVIA
+                  </div>
+                </div>
+
                 <iframe
                   src="https://www.openstreetmap.org/export/embed.html?bbox=-73.21717441082%2C-39.80617764449%2C-73.21317441082%2C-39.80417764449&layer=mapnik&marker=-39.805207%2C-73.215108"
                   width="100%" height="250" style="border:1px solid #ccc;" allowfullscreen="" loading="lazy"></iframe>
@@ -400,87 +396,97 @@
                     class="text-info">Ver en OpenStreetMap</a></p>
               </div>
 
-              <!-- SUCURSAL AV ESPAÑA -->
-              <div class="col-12 col-md-6 border py-3">
+              <!-- SUCURSAL AV. ESPAÑA -->
+              <div class="col-12 col-md-6 border py-3 position-relative" style="border-radius: 15px; overflow: hidden;">
                 <h4>Sucursal Av. España</h4>
-                <img src="imágenes/sucursal teja.png" class="img-fluid mb-2" alt="Sucursal Isla Teja">
-                <p>Teléfono: (56-63) 2789874</p>
-                <p>Correo: contacto@aniquilador.cl</p>
-                <p>Ubicación: Esquina Aledaña a "Servicio de salud Los Ríos"</p>
+                <div class="position-relative">
+                  <img src="./img/restobar_2.jpg" class="img-fluid mb-2" alt="av_españa">
+
+                  <!-- INFO RESTOBAR 2 -->
+                  <div
+                    style="position: absolute; top: 10px; left: 10px; color: white; text-decoration: underline; background-color: rgba(0, 0, 0, 0.6); padding: 5px;">
+                    Teléfono: (56-63) 2789874
+                  </div>
+                  <div
+                    style="position: absolute; top: 40px; left: 10px; color: white; text-decoration: underline; background-color: rgba(0, 0, 0, 0.6); padding: 5px;">
+                    Correo: contacto@aniquilador.cl
+                  </div>
+                  <div
+                    style="position: absolute; top: 70px; left: 10px; color: white; text-decoration: underline; background-color: rgba(0, 0, 0, 0.6); padding: 5px;">
+                    Ubicación: Esquina "Al costado de le sede antigua de INACAP VALDIVIA"
+                  </div>
+                </div>
+
                 <iframe
                   src="https://www.openstreetmap.org/export/embed.html?bbox=-73.227701%2C-39.816101%2C-73.225701%2C-39.814101&layer=mapnik&marker=-39.815601%2C-73.226481"
                   width="100%" height="250" style="border:1px solid #ccc;" allowfullscreen="" loading="lazy"></iframe>
                 <p><a href="https://www.openstreetmap.org/?lat=-39.815601&lon=-73.226481&zoom=19" target="_blank"
                     class="text-info">Ver en OpenStreetMap</a></p>
               </div>
-
             </div>
+
             <h6 class="text-center mt-3">Presione en "Ver en OpenStreetMap" para saber cómo llegar</h6>
           </section>
+        </div>
 
 
 
 
 
+        <!-- SEPARADOR BOOSTRAP-->
+        <div class="container border-bottom border-dark border-3 mt-5 mb-2 "></div>
+        <br>
+        <br>
+
+        <!--ENLACE SUCURSALES-->
+        <section id="contacto"></section>
 
 
 
-          <!-- SEPARADOR BOOSTRAP-->
-          <div class="container border-bottom border-dark border-3 mt-5 mb-2 "></div>
-          <br>
-          <br>
+        <!-- FORMULARIO-->
 
-          <!--ENLACE SUCURSALES-->
-          <section id="contacto"></section>
+        <h1 id="NEON_NARANJA_2">Formulario de contacto</h1>
 
 
-
-          <!-- FORMULARIO-->
-
-          <div id="NEON">
-            <h4>Formulario de contacto</h4>
-          </div>
-
-
-          <section class="container my-5">
-            <form>
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <label for="nombre" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
-                </div>
-                <div class="col-md-6">
-                  <label for="correo" class="form-label">Correo electrónico</label>
-                  <input type="email" class="form-control" id="correo" placeholder="tucorreo@correo.cl" required>
-                </div>
+        <section class="container my-5">
+          <form>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
               </div>
-
-              <div class="row mb-3">
-                <div class="col-md-6">
-                  <label for="telefono" class="form-label">Teléfono de contacto</label>
-                  <input type="tel" class="form-control" id="telefono" placeholder="+56 9 1234 5678" required>
-                </div>
-                <div class="col-md-6">
-                  <label for="tipo" class="form-label">Tipo de mensaje</label>
-                  <select class="form-select" id="tipo" required>
-                    <option value="" disabled selected>Selecciona una opción</option>
-                    <option value="consulta">Consulta</option>
-                    <option value="reclamo">Reclamo</option>
-                  </select>
-                </div>
+              <div class="col-md-6">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="correo" placeholder="tucorreo@correo.cl" required>
               </div>
+            </div>
 
-              <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe aquí tu mensaje..."
-                  required></textarea>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="telefono" class="form-label">Teléfono de contacto</label>
+                <input type="tel" class="form-control" id="telefono" placeholder="+56 9 1234 5678" required>
               </div>
+              <div class="col-md-6">
+                <label for="tipo" class="form-label">Tipo de mensaje</label>
+                <select class="form-select" id="tipo" required>
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="consulta">Consulta</option>
+                  <option value="reclamo">Reclamo</option>
+                </select>
+              </div>
+            </div>
 
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </div>
-            </form>
-          </section>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe aquí tu mensaje..."
+                required></textarea>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </section>
 
 
 
