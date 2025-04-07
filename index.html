@@ -89,39 +89,42 @@
   <!-- MAIN -->
   <main>
     <!-- CARRUSEL CON LOS PLATILLOS -->
-    <div class="container d-flex justify-content-center ">
-      <div id="carouselMenu" class="carousel slide" data-bs-ride="carousel" style="max-width: 600px; width: 100%;">
-
-        <div class="carousel-inner">
+    <div id="carousel-images" class="carousel slide d-none d-md-flex m-auto">
+      <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./img/pollo_papas _fritas.png" class="d-block w-100" alt="Pollo con papas">
+              <div class="container row m-auto">
+                  <img src="./img/piscola.jpg" class="col-3 p-3" alt="...">
+                  <img src="./img/pollo_papas _fritas.png" class="col-3 p-3" alt="...">
+                  <img src="./img/sundae.png" class="col-3 p-3" alt="...">
+                  <img src="./img/tequila.jpg" class="col-3 p-3" alt="...">
+              </div>
           </div>
           <div class="carousel-item">
-            <img src="./img/sundae.png" class="d-block w-100" alt="Humitas">
+              <div class="container row m-auto">
+                  <img src="./img/whisky.jpg" class="col-3 p-3" alt="...">
+                  <img src="./img/hambuerguesa_queso.jpg" class="col-3 p-3" alt="...">
+                  <img src="./img/ensalada.png" class="col-3 p-3" alt="...">
+                  <img src="./img/cola_mono.jpg" class="col-3 p-3" alt="...">
+              </div>
           </div>
-          <div class="carousel-item">
-            <img src="./img/piscola.jpg" class="d-block w-100" alt="Cocteles">
-          </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMenu" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselMenu" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
-
-        <!-- INDICADORES DE PUNTOS -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="0" class="active" aria-current="true"
-            aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselMenu" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-
       </div>
-    </div>
-
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-images"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-images"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel-images" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel-images" data-bs-slide-to="1" aria-label="Slide 2"
+              class=""></button>
+      </div>
+  </div>
 
 
 
